@@ -1,0 +1,36 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #2382e8;
+}
+
+.img-border {
+  border: 3.5px solid #0b3057 !important; /* Menambahkan border baru dengan lebar 2px dan warna merah */
+}
+
+.img-bor {
+  border: 3.5px solid #2382e8 !important; /* Menambahkan border baru dengan lebar 2px dan warna merah */
+}
+
+#about {
+  background-color: #0b3057;
+}
+
+#projects {
+  background-color: #2382e8;
+}
+
+#skil {
+  background-color: #0b3057;
+}
+
+#contact {
+  background-color: #0b3057;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+footer {
+  background-color: #2382e8;
+}
