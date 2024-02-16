@@ -1,3 +1,16 @@
+body {
+  font-size: 1rem;
+  font-family: "Merriweather", serif;
+}
+
+body h1 {
+  font-family: "Protest Strike", sans-serif;
+}
+
+body h2 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
 .jumbotron {
   padding-top: 6rem;
   background-color: #2382e8;
@@ -11,7 +24,44 @@
   border: 3.5px solid #2382e8 !important; /* Menambahkan border baru dengan lebar 2px dan warna merah */
 }
 
+.card {
+  background-color: #0b3057;
+  color: #ffffff;
+}
+
 #about {
+  background-color: #2382e8;
+}
+
+#projects {
+  background-color: #2382e8;
+}
+
+#skil {
+  background-color: #2382e8;
+}
+
+#skil h3 {
+  font-family: "Merriweather", serif;
+  color: #2382e8;
+}
+
+#skil .card-text {
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+}
+
+#contact {
+  background-color: #2382e8;
+}
+
+#contact .card {
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* #about {
   background-color: #0b3057;
 }
 
@@ -25,7 +75,7 @@
 
 #contact {
   background-color: #0b3057;
-}
+} */
 
 section {
   padding-top: 5rem;
@@ -33,4 +83,26 @@ section {
 
 footer {
   background-color: #2382e8;
+}
+
+.link-with-arrow {
+  display: flex;
+  align-items: center; /* Membuat ikon dan teks sejajar secara vertikal */
+  text-decoration: none;
+  color: #2382e8;
+}
+
+.text {
+  margin-right: 5px; /* Memberi jarak antara ikon dan teks */
+}
+
+.arrow {
+  transition: transform 0.3s ease; /* Animasi perubahan transformasi */
+  opacity: 0; /* Mengatur opasitas panah saat tidak dihover */
+  font-size: 1.5rem;
+}
+
+.link-with-arrow:hover .arrow {
+  opacity: 1; /* Mengatur opasitas panah saat dihover */
+  transform: translateX(5px); /* Menggerakkan panah ke kanan saat dihover */
 }
