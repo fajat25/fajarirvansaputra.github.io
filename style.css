@@ -11,6 +11,47 @@ body h2 {
   font-family: "Bebas Neue", sans-serif;
 }
 
+.rounded-img {
+  width: 300px;
+  max-width: 300px; /* Maksimum lebar gambar */
+  border: 2px solid black;
+  border-bottom: 0 0; /* Menghapus border bagian bawah */
+  border-radius: 45% 45% 0 0; /* Membuat sudut mencekung di bagian atas */
+  overflow: hidden; /* Memastikan border yang melingkari gambar tidak terpotong */
+}
+
+@media screen and (max-width: 668px) {
+  .rounded-img {
+    width: 80%; /* Lebar gambar pada layar yang lebih kecil */
+    max-width: 200px; /* Maksimum lebar gambar pada layar yang lebih kecil */
+  }
+}
+
+.button {
+  background-color: #ffffff; /* Warna latar belakang tombol */
+  color: #000000; /* Warna teks tombol */
+  border: 2px solid #000000; /* Warna border tombol */
+  border-color: #000;
+  padding: 10px 20px; /* Padding pada tombol */
+  cursor: pointer; /* Mengubah kursor menjadi tanda tangan ketika di atas tombol */
+  text-decoration: none; /* Menghapus garis bawah */
+  display: inline-block; /* Membuat tombol berperilaku sebagai elemen inline yang dapat menerima properti width */
+  border-radius: 5px;
+}
+
+.button--ghost {
+  background-color: transparent; /* Latar belakang tombol transparan */
+}
+
+/* Ketika tombol dihover */
+.button:hover,
+.button--ghost:hover {
+  border-color: #004793;
+  background-color: #000000; /* Ubah warna latar belakang saat tombol dihover */
+  color: #2382e8; /* Ubah warna teks saat tombol dihover */
+  border-radius: 8px; /* Melengkungkan setiap pojok sedikit lebih besar ketika dihover */
+}
+
 .jumbotron {
   padding-top: 6rem;
   background-color: #2382e8;
@@ -21,7 +62,8 @@ body h2 {
 }
 
 .img-bor {
-  border: 3.5px solid #2382e8 !important; /* Menambahkan border baru dengan lebar 2px dan warna merah */
+  border: 3.5px solid #2382e8 !important; /* Menambahkan border baru den
+  gan lebar 2px dan warna merah */
 }
 
 .card {
